@@ -1,1 +1,41 @@
-<!-- haxaze -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="Signup.css">
+</head>
+<body>
+    <div class="Signupform">
+        <img src="Logo.png" alt="Logo" height="50px">
+        <h2>Create an Account</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Saisha Wagh">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="........">
+            </div>
+            <p class="terms">By continuing, you agree to our terms of service</p>
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+        <div class="or-signup-container">
+            <p class="or-signup">or sign up with</p>
+        </div>
+        <button class="google-signup">
+            <img src="google-logo.png" alt="Google Logo" class="google-logo">
+            Continue with Google
+        </button>
+        <p class="already-account">Already have an account? <a href="signin.html" class="signin-link">Sign in here</a></p>
+    </div>
+</body>
+</html>
