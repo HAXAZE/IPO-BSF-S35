@@ -1,12 +1,12 @@
-<!-- coding -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="IPO-BSF-S35-own-/bluestockfintech/ipo/static/css/signinglobal.css" />
-    <link rel="stylesheet" href="IPO-BSF-S35-own-/bluestockfintech/ipo/static/css/signinstyle.css" />
+    <!--------------------- CSS Link ------------------>
+    <link rel="stylesheet" href="signinglobal.css" />
+    <link rel="stylesheet" href="signinstyle.css" />
+    <!--------------------- Google Fonts Link ------------------>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
@@ -22,14 +22,19 @@
         <div class="frame-parent">
           <div class="frame-group">
             <img class="frame-child" alt="" src="./public/frame-40589@2x.png" />
-
+            <!------------------ Start Sign In Form -------------->
             <form class="input-section">
               <div class="login">
                 <div class="input">
                   <div class="email">
                     <label class="label">Email Address</label>
                     <div class="input1">
-                      <input class="text" type="email" placeholder="Enter Email Address" required=""/>
+                      <input
+                        class="text"
+                        type="email"
+                        placeholder="Enter Email Address"
+                        required=""
+                      />
                     </div>
                   </div>
                   <div class="email">
@@ -57,11 +62,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdYzgcqAAAAAHqv2FO2YI8t-LCLxQJ59w4DU8SI"></div>
+                <!------------------ Start Google reCaptcha -------------->
+                <div
+                  class="g-recaptcha brochure__form__captcha"
+                  data-sitekey="YOUR_SITE_KEY"
+                ></div>
+                <!------------------ End Google reCaptcha -------------->
                 <div class="button">
                   <div class="remind-me">
                     <input class="tick" type="checkbox" />
-
                     <span class="keep-me-signed">Keep me signed in</span>
                   </div>
                   <button class="buttonprimary">
@@ -86,15 +95,14 @@
                 <span class="continue-with-google">Continue with Google</span>
               </button>
             </form>
+            <!------------------ End Sign In Form -------------->
           </div>
-          <a class="create-an-account" href="#"
-            >Create an account</a
-          >
+          <a class="create-an-account" href="#">Create an account</a>
         </div>
       </div>
     </div>
-
-    <script src="IPO-BSF-S35-own-/bluestockfintech/ipo/static/js/signinscript.js"></script>
+    <!------------------ JS Files ----------------->
+    <script src="signinscript.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
